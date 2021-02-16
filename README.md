@@ -11,7 +11,7 @@ Kimono CMS - The Naicu Experience <b>ლ(╹◡╹ლ)</b>
 # Dev Team
 Content Management System by: Kevin Narain
 <br>
-Design by: Joshua Hursepuny.
+Design by: Joshua Hursepuny
 
 # Copyright uWu
 Copyright © 2021 Kevin Narain & Joshua Hursepuny
