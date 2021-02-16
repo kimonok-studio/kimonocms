@@ -24,8 +24,8 @@ if (isset($_POST['submit'])) {
         $password = password_hash($password, PASSWORD_DEFAULT);
     
         $query = "INSERT INTO users (username, user_email, user_password, user_role) ";
-        $query .= "VALUES('{$username}', '{$email}', '{$password}', 'admin' )";
-        $register_user_query = mysqli_query($connection, $query);
+        $query .= "VALUES('{$username}', '{$email}', '{$password}', '' )";
+        $register_user_query = mysqli_query($connection, $query); // Fixed.
     
         if (!$register_user_query) {
             die("QUERY FAILED " . mysqli_error($connection) . ' ' . mysqli_errno($connection));

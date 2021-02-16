@@ -36,8 +36,10 @@ include "includes/header.php";
                     ?>
                     
                 <h1 class="page-header">
-                    Page Heading
-                    <small>Secondary Text</small>
+<!--
+                    Welcome to Kimono きもの 
+                    <small>The future is blogging</small>
+-->
                 </h1>
 
                 <!-- First Blog Post -->
