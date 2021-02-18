@@ -13,5 +13,5 @@ Content Management System by: Kevin Narain
 <br>
 Design by: Joshua Hursepuny
 
-# Copyright uWu
+# Copyright UwU
 Copyright © 2021 Kevin Narain & Joshua Hursepuny
