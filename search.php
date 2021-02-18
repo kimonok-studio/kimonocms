@@ -2,7 +2,7 @@
 include "includes/db.php";
 include "includes/header.php";
 ?>
-    
+
     <!-- Navigation -->
     <?php
     include "includes/navigation.php"
@@ -15,19 +15,19 @@ include "includes/header.php";
 
             <!-- Blog Entries Column -->
             <div class="col-md-8">
-                
-                <?php   
+
+                <?php
                 if (isset($_POST['submit'])) {
                     $search = mysqli_real_escape_string($connection, $_POST['search']);
-    
+
                     // Search function.
                     $query = "SELECT * FROM posts WHERE post_tags LIKE '%$search%' ";
                     $search_query = mysqli_query($connection, $query);
-    
+
                 if (!$search_query) {
                     die("QUERY FAILED" . mysqli_error($connection));
                 }
-    
+
                 $count = mysqli_num_rows($search_query); // Shows amount of rows from query result.
 
                 // No search results.
@@ -45,7 +45,7 @@ include "includes/header.php";
                         ?>
 
                     <h1 class="page-header">
-                        Page Heading
+                        Page Head
                         <small>Secondary Text</small>
                     </h1>
 
@@ -64,15 +64,15 @@ include "includes/header.php";
                     <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
                     <hr>
-        <?php 
+        <?php
                 }
-            }  
+            }
         }
         ?>
 
-                
-               
-                        
+
+
+
             </div>
 
             <!-- Blog Sidebar Widgets Column -->
@@ -82,9 +82,9 @@ include "includes/header.php";
 
         </div>
         <!-- /.row -->
-        
+
         <hr>
-        
+
 <?php
-include "includes/footer.php";      
+include "includes/footer.php";
 ?>
