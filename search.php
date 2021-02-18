@@ -45,7 +45,7 @@ include "includes/header.php";
                         ?>
 
                     <h1 class="page-header">
-                        Page Head
+                        Page Heading
                         <small>Secondary Text</small>
                     </h1>
 
